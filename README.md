@@ -1,4 +1,4 @@
 # iber2cnmc
-Pyhton script to convert Iberdrola (https://www.i-de.es/) consumption statics (csv format) to CNMC's energy simulator (https://facturaluz2.cnmc.es/facturaluz2.html) csv format  
-Usage:  
+Script en Python para convertir el CSV de las estidísticas de consumo del contador inteligente obtenidas de https://www.i-de.es/ en un CSV compatible con el simulador de facturación de tarifas PVPC de la CNMC (https://facturaluz2.cnmc.es/facturaluz2.html).  
+Uso:  
 Iber2cnmc.py -i input.csv -o output.csv
