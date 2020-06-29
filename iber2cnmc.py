@@ -20,8 +20,7 @@ def csv2csv(inname, outname):
 			CUPS = line_split[0]+";"
 			date = datetime.datetime.strptime(line_split[1].split()[0], "%Y/%m/%d").strftime("%d/%m/%Y") + ";"
 			hour = get_int_hour(line_split[1].split()[1]) + ";"
-			consumption = str(float(line_split[3])/1000) + ";"
-			consumption = consumption.replace('.',',')
+			consumption = str(float(line_split[3])/1000).replace('.',',') + ";"
 			obtained = "R"
 			out_file = out_file + CUPS + date + hour + consumption + obtained + "\n"
 	file_out = open(outname,'w')
